@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+<style>
+  .review-card-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .review-card {
+    display: inline-block;
+    margin-right: 15px;
+    width: 300px; /* Adjust the width as needed */
+  }
+  .review-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .review-card .star-icons {
+    color: #f39c12; /* Yellow color */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .review-card .card-text {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+</style>
+    
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4TMQCCRN4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X4TMQCCRN4');
+    </script>
+
+
+    <!-- payhip -->
+    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+    <script type="text/javascript">
+        var PayhipConfig = {
+            enableCart: true
+        };
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Font (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- ===================================== -->
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>zone store</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="posters/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="insta.ico" type="image/x-icon">
+
+    <meta property="og:title" content="متجر زون - زيادة متابعين وسائل التواصل الاجتماعي" />
+    <meta property="og:image" content="posters/logo.png" />
+    <meta property="og:description"
+        content="مرحبًا بك في متجر زون! نحن متجر متخصص في زيادة عدد متابعي وسائل التواصل الاجتماعي. قم بتعزيز حساباتك على منصات شهيرة مثل تويتر وإنستجرام وفيسبوك وزيادة تفاعلاتك وتأثيرك الإلكتروني. احصل على خدمات موثوقة وآمنة مع فريقنا المتخصص. ابدأ الآن وساهم في نمو وجودك الرقمي!" />
+
+
+    <style>
+        #loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+            opacity: 0;
+            /* Initially hidden */
+            transition: opacity 0.3s ease-in-out;
+            /* Smooth transition */
+        }
+
+        #loading-container.show {
+            opacity: 1;
+            /* Show animation */
+        }
+
+        #loading-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white" oncontextmenu="return false">
+
+
+    <!-- The loading image -->
+    <div id="loading-container">
+        <img id="loading-image" src="services/logo1.png" alt="Loading...">
+    </div>
+
+    <script>
+        // Show the loading container with animation
+        document.addEventListener("DOMContentLoaded", function () {
+            var loadingContainer = document.getElementById("loading-container");
+            loadingContainer.classList.add("show");
+        });
+
+        // Hide the loading container when the page finishes loading
+        window.addEventListener("load", function () {
+            var loadingContainer = document.getElementById("loading-container");
+            loadingContainer.style.opacity = 0; // Immediate hiding without animation
+            setTimeout(function () {
+                loadingContainer.style.display = "none"; // After hiding animation is complete
+            }, 300);
+        });
+    </script>
+
+
+    <!-- floating whatsapp button -->
+    <div class="floating-container" style="left: unset; right: 20px;">
+        
+        <a href="https://wa.me/message/ZTRH4L35S6KWM1" target="_blank" class="floating-whatsapp">
+            <center><i class="fab fa-whatsapp"></i></center> <!-- WhatsApp icon from Font Awesome -->
+        </a>
+        <div class="text-container">
+            <p>الدعم الفني</p>
+        </div>
+    </div>
+
+    <!-- =============== -->
+    <!-- floating custom order button -->
+    <div class="floating-container" style="right: unset; left: 20px;">
+        
+        <a class="floating-button">
+            <center><i class="fas fa-plus"></i></center> <!-- Plus icon from Font Awesome -->
+        </a>
+        <div class="text-container">
+            <p>تقديم<br>طلب مخصص</p>
+        </div>
+    </div>
+
+    <!-- welcome message -->
+    <div id="popup" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true"
+        style="z-index: 10000;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupLabel">Zone Store || متجر زون</h5>
+                    <button type="button" class="close bg-dark text-danger" data-dismiss="modal" aria-label="Close">
+                        <b>إغلاق<span aria-hidden="true">&times;</span></b>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>السلام عليكم و رحمة الله و بركاته</h3>
+                    <p>متجر زون يرحب بك</p>
+                    <p>إذا كانت هذه أول زيارة لك لمتجرنا، فتشرفنا زيارتك </p>
+                    <p>و إذا لم تكن كذلك، فتسرنا عودتك</p>
+                    <p>إذا كنت بحاجة لأي مساعدة، لا تتردد في التواصل معنا. نحن في خدمتك بأي وقت</p>
+                    <hr>
+                    <hr>
+                    <div id="country"></div>
+                    <div id="currency"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <center>
+
+
+        
+        <!-- floating window -->
+        <div class="floating-window">
+            <div class="close-button"> X </div>
+            <br>
+            <div class="contact-form">
+                <h2 class="text-danger">إرسال طلب مخصص</h2>
+                <hr>
+                <form id="form">
+                    <div class="mb-3">
+                        <!-- server to submit the form -->
+                        <input type="hidden" name="access_key" value="eedba20b-4c6d-452a-bb60-e9d68a71a492" />
+                        <input type="hidden" name="subject" value="تلقيت طلب جديد من متجر زون [ طلب مخصص ]" />
+                        <input type="hidden" name="from_name" value="Zone Store">
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                        <!-- .................................................................................... -->
+                        <label for="name" class="form-label">الأسم \ اللقب :</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">الإيميل (للرد عليك):</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="currency" class="form-label">العملة المفضلة :</label>
+                        <input type="text" class="form-control" id="currency" name="currency" required>
+                    </div>
+
+                    <label for="section order :"> أختر قسم طلبك : </label>
+                    <br>
+                    <select class="bg-dark text-light rounded-2 p-2 m-2" name="section order :"
+                        style="width: 100%; text-align: center;">
+                        <option value="instagram">انستقرام</option>
+                        <option value="tiktok">تيك توك</option>
+                        <option value="youtube">يوتيوب</option>
+                        <option value="twitter">تويتر</option>
+                        <option value="telegram">تلقرام</option>
+                        <option value="snap chat">سناب شات</option>
+                        <option value="facebook">فيسبوك</option>
+                        <option value="threads">ثريدز</option>
+                        <option value="apps">تطبيقات الجوال</option>
+                        <option value="SEO">SEO</option>
+                    </select>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="custom_order" class="form-label">تفاصيل الطلب :</label>
+                <textarea class="form-control" id="custom_order" name="custom_order" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-primary"><b>تـــــم</b></button>
+            </form>
+            <div id="result"></div>
+            <br>
+        </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- ................................................... -->
+        <div class="container mt-3">
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img class="rounded-circle" src="services/logo1.png" style="max-width: 100px; margin-right: 20px;">
+  <div style="position: relative; text-align: center;">
+    <h3 class="text-warning">متجر زون<hr class="text-warning">Zone Store</h3>
+    <div class="bg-warning" style="position: absolute; top: 50%; transform: translateY(-50%); height: 100%; width: 0.5px; left: -10px;"></div>
+    <a href="#reviews" class="btn btn-outline-warning btn-block"><h3>عرض تقييمات المتجر</h3></a>  
+  </div> 
+</div>
+
+
+            <hr>
+            <h1 class="hello">قدمت أهلا و وطأت سهلا<br>في متجر زون</h1>
+
+            <br>
+            <!-- ===================================== -->
+            <!-- completed orders -->
+            <section>
+                <b>
+                    <h1>الطلبات المكتملة</h1>
+                </b>
+                <div id="target-div" class="number-animation">+ 0</div>
+            </section>
+            <br>
+            <script src="script.js"></script>
+            <hr>
+            <!-- ===================================== -->
+            <!-- Nav tabs -->
+            <div style="position: sticky; top: 0; z-index: 9999;" class="bg-dark">
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="text-warning bg-black nav-link active" data-bs-toggle="tab" href="#home">الصفحة
+                            الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu1">من نحن؟</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu2">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu3">سياسة الخصوصية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu4">سياسة إسترداد
+                            الأموال</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ===================================== -->
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <!-- ===================================== -->
+                    <!-- insta section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#insta">
+                            <h3>قسم انستقرام</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="insta" class="collapse show">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/insta/insta_followers.svg"></img>
+                                    <h4 class="card-title">شراء متابعين انستا</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/insta/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/insta/insta_likes.svg"></img>
+                                    <h4 class="card-title">شراء لايكات انستا</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/insta/likes.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid"
+                                        src="posters/insta/insta_views(posts).svg"></img>
+                                    <h4 class="card-title">زيادة مشاهدات إنستا (بوستات)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/insta/posts_views.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+                            <button onclick="window.location='services/SR/insta/index.html'"
+                                class="btn btn-dark btn-outline-danger">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- TikTok section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#tiktok">
+                            <h3>قسم تيك توك</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="tiktok" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/tiktok/tiktok_followers.svg"></img>
+                                    <h4 class="card-title">زيادة متابعين تيك توك (اقرأ الوصف)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/tiktok/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/tiktok/tiktok_likes.svg"></img>
+                                    <h4 class="card-title">زيادة لايكات تيك توك</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/tiktok/likes.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/tiktok/tiktok_views.svg"></img>
+                                    <h4 class="card-title">زيادة مشاهدات تيك توك</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/tiktok/views.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/tiktok/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- YouTube section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#youtube">
+                            <h3>قسم اليوتيوب</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="youtube" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/youtube/followers.svg"></img>
+                                    <h4 class="card-title">زيادة مشتركين يوتيوب (اقرأ الوصف)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/youtube/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/youtube/likes.svg"></img>
+                                    <h4 class="card-title">زيادة لايكات يوتيوب</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/youtube/likes.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/youtube/views.svg"></img>
+                                    <h4 class="card-title">زيادة مشاهدات يوتيوب</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/youtube/views.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/youtube/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- Twitter section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#twitter">
+                            <h3>قسم تويتر</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="twitter" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid"
+                                        src="posters/twitter/twitter_followers(warranty).svg"></img>
+                                    <h4 class="card-title">زيادة متابعين تويتر (مضمون)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/twitter/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/twitter/twitter_retweet.svg"></img>
+                                    <h4 class="card-title">زيادة ريتويت تويتر</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/twitter/retweet.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/twitter/twitter_views.svg"></img>
+                                    <h4 class="card-title">زيادة مشاهدات تويتر</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/twitter/views.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/twitter/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- Telegram section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#tel">
+                            <h3>قسم تلقرام</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="tel" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/telegram/followers.svg"></img>
+                                    <h4 class="card-title">زيادة أعضاء/مشتركين تلقرام (مع الضمان)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/telegram/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/telegram/reactions.svg"></img>
+                                    <h4 class="card-title">زيادة رياكشن/تفاعل تلقرام</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/telegram/reactions.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/telegram/votes.svg"></img>
+                                    <h4 class="card-title">(زيادةأصوات الإستطلاع (تلقرام</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/telegram/votes.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/telegram/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+
+                    <!-- Snapchat section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#snap">
+                            <h3>قسم سناب شات</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="snap" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/snap/snap_followers.svg"></img>
+                                    <h4 class="card-title">زيادة متابعين سناب عرب<br>(ضمان مدى الحياة)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='https://zone-store.senku0.repl.co/services/SR/snap/followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/snap/snap_views.svg"></img>
+                                    <h4 class="card-title">إضافة مشاهدات سناب شات<br>(ستوريات)</h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='https://zone-store.senku0.repl.co/services/SR/snap/views.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='https://zone-store.senku0.repl.co/services/SR/snap/index.html'">عرض
+                                الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- Facebook section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#facebook">
+                            <h3>قسم فيسبوك</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="facebook" class="collapse">
+
+                        <!-- card 1 -->
+                        <div class="row table-dark">
+
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid"
+                                        src="posters/facebook/facebook_followers(warranty).svg"></img>
+                                    <h4 class="card-title">زيادة متابعين فيسبوك<br>
+                                        <span style="color: yellow;">(ضمان مدى الحياة)</span>
+                                    </h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/facebook/life_warranty_followers.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 2 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/facebook/facebook_likes.svg"></img>
+                                    <h4 class="card-title">زيادة لايكات و رياكشنات فيسبوك
+                                        <br>
+                                        <span style="color: yellow;">(ضمان مدى الحياة)</span>
+                                    </h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/facebook/reactions.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <!-- card 3 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/facebook/story_views.svg"></img>
+                                    <h4 class="card-title">زيادة مشاهدات<br>فيسبوك (ستوري)<br>
+                                        <span style="color: yellow;">(ضمان مدى الحياة)</span>
+                                    </h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/facebook/likes.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/facebook/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                    <!-- websites Visits section -->
+                    <div class="d-grid">
+                        <button class="btn btn-outline-warning btn-block" data-bs-toggle="collapse"
+                            data-bs-target="#seo">
+                            <h3>قسم زيارات المواقع [SEO]</h3>
+                        </button>
+                    </div>
+
+                    <!-- show -->
+                    <div id="seo" class="collapse">
+                        <div class="row table-dark">
+
+                            <!-- card 1 -->
+                            <div class="col-md-3 card bg-dark border p-3 m-3" style="width : 300px;">
+
+                                <div class="card-body">
+                                    <img class="card-img-top img-fluid" src="posters/SEO/visits_google.svg"></img>
+                                    <h4 class="card-title">رفع عدد زيارات
+                                        <br>
+                                        موقعك الإلكتروني (صديقة للسيو)
+                                        <br>
+                                        [من جوجل]
+                                    </h4>
+                                    <input type="button" class="btn btn-outline-primary" value="عرض"
+                                        onclick="window.location='services/SR/seo/visits.html'">
+                                </div> <!-- card-body -->
+                            </div> <!-- card & col -->
+
+                            <button class="btn btn-dark btn-outline-danger"
+                                onclick="window.location='services/SR/seo/index.html'">عرض الكل</button>
+                            <hr>
+                            <hr>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- ===================================== -->
+                    <!-- ===================================== -->
+                </div>
+                <!-- ===================================== -->
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <h1 style="color: red;">!من نحن</h1>
+
+                    <hr>
+                    <h2 style="color: yellow;">متجر زون</h2>
+
+                    <p>
+                        نحن متجر زون، متجر إلكتروني يوفر خدمات زيادة المتابعين والإعجابات والمشاهدات على مختلف المنصات
+                        الاجتماعية مثل إنستقرام،
+                        فيسبوك، تويتر وغيرها. نحن نهدف إلى تقديم خدمات ذات جودة عالية وموثوقة لعملائنا في تحقيق أهدافهم
+                        على هذه المنصات
+                        الاجتماعية.
+                    </p>
+                    <hr>
+
+                    <h3 style="color: yellow;">رؤيتنا</h3>
+                    <p>
+                        رؤيتنا هي أن نكون الشريك الموثوق والمفضل لعملائنا في تحقيق نجاحهم على المنصات الاجتماعية
+                        المختلفة، وأن نكون الوجهة
+                        الأولى للحصول على خدمات زيادة المتابعين والإعجابات والمشاهدات عالية الجودة والكفاءة.
+                    </p>
+                    <hr>
+
+                    <h3 style="color: yellow;">قيمنا</h3>
+                    <ul>
+                        <li>الجودة: نحرص على تقديم خدمات عالية الجودة وفقًا لأعلى المعايير المهنية.</li>
+                        <li>الموثوقية: نلتزم بتلبية توقعات عملائنا والوفاء بالوعود التي نقدمها.</li>
+                        <li>السرعة: نحن نهتم بتقديم الخدمات بسرعة وفاعلية لتلبية احتياجات عملائنا في الوقت المناسب.</li>
+                        <li>الأمان والخصوصية: نحن نحافظ على سرية وخصوصية بيانات عملائنا ونتبع أعلى معايير الأمان.</li>
+                    </ul>
+                    <hr>
+
+                    <h3 style="color: yellow;">اتصل بنا</h3>
+                    <p>
+                        إذا كان لديك أي أسئلة أو استفسارات أو تحتاج إلى المزيد من المعلومات، يمكنك التواصل معنا عبر
+                        البريد الإلكتروني
+                        <br>
+                        <a href="mailto:support@zone-stores.com">support@zone-stores.com</a>
+                        <br>
+                        أو الاتصال بنا عبر الهاتف على رقم
+                        <a href="tel: +96899261243"> 0096899261243 </a>
+                    </p>
+
+                    <p>نشكركم على ثقتكم في "(متجر زون)" ونتطلع إلى خدمتكم بكل ما نقدمه.</p>
+                </div>
+                <!-- ===================================== -->
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <h3>الأسئلة الشائعة</h3>
+                    <div class="container mt-5">
+                        <h2 class="text-light">Frequently Asked Questions</h2>
+
+                        <div class="accordion" id="faqAccordion">
+
+                            <!-- FAQ Item 1 -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#1"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            س: كم يستغرق ظهور النتائج؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="1" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: المدة الزمنية تختلف حسب الخدمة والباقة التي تختارها. عادةً، ستبدأ بملاحظة
+                                        النتائج خلال ساعات قليلة أو أيام بعد بدء الخدمة.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#2"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: ما هو ضمان المتابعين والإعجابات والمشاهدات؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="2" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: نحن نقدم ضمانًا للكمية المعلن عنها من المتابعين والإعجابات والمشاهدات خلال
+                                        فترة الضمان. إذا واجهت أي مشاكل، يرجى التواصل مع فريق الدعم الخاص بنا وسنقوم
+                                        بتقديم المساعدة المناسبة.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#3"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: هل تحتاج إلى كلمة مرور حسابي؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="3" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: لا، لا نحتاج إلى كلمة مرور حسابك. نحن نحتاج فقط إلى رابط أو اسم المستخدم
+                                        لحسابك على وسائل التواصل الاجتماعي لتقديم التفاعل المطلوب.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#4"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: هل يمكنني إلغاء الخدمة أو التعديل عليها بعد الشراء؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="4" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        لا إلا في حالات إستثنائية مثل حصول خطأ من قبل السيرفر عند تنفيذ الطلب
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#5"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: هل يمكنني الحصول على دعم فني أو مساعدة في أي وقت؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="5" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: نعم، فريق الدعم الفني لدينا متاح للمساعدة في أي استفسارات أو مشاكل قد
+                                        تواجهها. يمكنك التواصل معنا عبر البريد الإلكتروني في أي وقت.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 6 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#6"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: هل يمكنني استخدام خدماتك للحسابات الشخصية والعلامات التجارية؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="6" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: نعم، يمكننا توفير خدماتنا للحسابات الشخصية والعلامات التجارية على حد سواء.
+                                        نحن نقدم حلولًا مخصصة لتلبية احتياجات العملاء المختلفة.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 7 -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo" style="background-color: rgb(0,15,38);">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-light" data-toggle="collapse" data-target="#7"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            س: هل يمكنني طلب خدمات مخصصة لتلبية متطلباتي الفردية؟
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="7" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        ج: نعم، ستجد خيار تقديم الطلبات في الصفحة الرئيسية كـ زر عائم
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add more FAQ items here -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ===================================== -->
+                <!-- ===================================== -->
+                <div id="menu3" class="container tab-pane fade"><br>
+                    <h3>سياسة الخصوصية</h3>
+                    <h2 class="text-light">Privacy Policy</h2>
+                    <hr>
+                    <div class="container mt-5">
+
+                        <br>
+                        <h5>
+                            شكرًا لاهتمامك بزيارة موقعنا "(متجر زون)" وثقتك فينا. نحن نهتم بخصوصية زوارنا ونتعهد بحماية
+                            معلوماتك الشخصية. يرجى قراءة سياسة الخصوصية التالية لفهم كيفية جمع واستخدام وحماية المعلومات
+                            التي تقدمها عند زيارة موقعنا.
+                        </h5>
+                        <br><br>
+                        <p dir="rtl" style="text-align: right;">
+                            <span style="color: red;">جمع المعلومات: </span>
+                            عندما تقوم بزيارة موقعنا، قد نجمع بعض المعلومات الشخصية التي تقدمها طوعًا، مثل الاسم وعنوان
+                            البريد الإلكتروني ومعلومات الدفع. قد نستخدم ملفات تعريف الارتباط (الكوكيز) وتقنيات تتبع أخرى
+                            لجمع معلومات غير شخصية حول زيارتك للموقع وتحليل استخدام المستخدمين.
+                            <br><br>
+                            <span style="color: red;">استخدام المعلومات: </span>
+                            نحن نستخدم المعلومات التي نجمعها لتقديم خدماتنا وتحسينها، وتخصيص تجربتك على الموقع، والتواصل
+                            معك بشأن الخدمات والعروض الترويجية. قد نستخدم أيضًا المعلومات لأغراض إحصائية وتحليلية لتحسين
+                            أداء الموقع وفهم تفضيلات المستخدمين.
+                            <br><br>
+                            <span style="color: red;">حماية المعلومات: </span>
+                            نحن نتخذ إجراءات أمنية لحماية المعلومات الشخصية التي نحتفظ بها من الوصول غير المصرح به،
+                            والاستخدام غير المشروع، والتغيير غير المصرح به، والكشف العرضي أو العرضي.
+                            <br><br>
+                            <span style="color: red;">مشاركة المعلومات:</span>
+                            نحن لا نقوم ببيع أو تأجير أو مشاركة معلوماتك الشخصية مع أطراف ثالثة، إلا إذا تمسياسة
+                            الخصوصية
+                            <hr>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- ===================================== -->
+
+                <div id="menu4" class="container tab-pane fade"><br>
+                    <h3>سياسة إسترداد الأموال</h3>
+                    <h2 class="text-light">Refund Policy</h2>
+                    <hr>
+                    <div class="container mt-5">
+
+                        <br>
+                        <h5>
+                            نحن نتفهم أنها قد تحدث مواقف تستدعي استرداد الأموال، ونسعى لتقديم خدمة عالية الجودة
+                            لعملائنا. ومع ذلك، يرجى ملاحظة أننا نتبنى سياسة عدم استرداد الأموال إلا في الحالات التالية:
+                        </h5>
+                        <br><br>
+                        <p dir="rtl" style="text-align: right;">
+                        <dl class="right-align">
+                            <dt>: عند حدوث خطأ من جانبنا</dt>
+                            <dd>إذا حدث خطأ من جانبنا يؤدي إلى عدم تقديم الخدمة المطلوبة أو توفير المنتج المطلوب، سنقوم
+                                بإصلاح الخطأ أو استرداد المبلغ المدفوع.</dd>
+
+                            <dt>: عند إلغاء الطلب قبل تنفيذه</dt>
+                            <dd>إذا كنت ترغب في إلغاء الطلب وطلب استرداد الأموال قبل أن نبدأ تنفيذ الخدمة أو شحن المنتج،
+                                يمكننا أن نقدم استردادًا كاملاً للمبلغ المدفوع.</dd>
+
+                            <dt>: يرجى ملاحظة</dt>
+                            <dd>في جميع الحالات الأخرى، لا يمكننا استرداد الأموال المدفوعة. يرجى التحقق بعناية من
+                                المنتجات أو الخدمات قبل الشراء والتأكد من أنها تلبي احتياجاتك بشكل صحيح.</dd>
+                        </dl>
+
+                        <p>في حالة الاستفسارات أو المشكلات المتعلقة بالاسترداد، يرجى التواصل مع فريق الدعم الخاص بنا
+                            وسنكون سعداء بمساعدتك.</p>
+
+                        <p>يرجى ملاحظة أنه قد تنطبق شروط وأحكام إضافية على سياسة الاسترداد ويجب عليك قراءتها وفهمها قبل
+                            القيام بأي عملية شراء.</p>
+
+                        <p>نشكركم على ثقتكم في "(متجر زون)" ونعمل جاهدين لضمان رضاكم الكامل.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- ===================================== -->
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Reviews Section -->
+    <div class="card p-4" id="reviews">
+      <h2 class="text-center">شارك تجربتك</h2>
+      <p class="text-center">نحن نود أن نسمع عن تجربتك معنا. تعليقاتك تساعدنا على التحسين!</p>
+
+<!-- TrustBox widget - Review Collector -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="64d1435fe313ad76ce020e05" data-style-height="52px" data-style-width="100%">
+  <a href="https://www.trustpilot.com/review/zone-stores.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+<!-- ========================== -->        
+<!-- ========================== -->
+<hr><senter>
+<div style="height: 70px; width: 250px; border: solid 1px green; border-radius: 5px; background-color: white; display: flex; justify-content: center; align-items: center;">
+<!-- TrustBox widget - Micro Review Count -->
+<div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="64d1435fe313ad76ce020e05" data-style-height="52px" data-style-width="100%" data-theme="light" data-min-review-count="0" data-without-reviews-preferred-string-id="2" data-style-alignment="center">
+  <a href="https://www.trustpilot.com/review/zone-stores.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+</div></senter>
+    </div>
+        
+  <div class="card mt-5" id="reviews">
+    <h2 class="text-center">أبرز التقييمات</h2>
+    <div class="review-card-container">
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="card">
+          <img src="IMG_20230807_165918.jpg" class="card-img-top" alt="Review 1">
+          <div class="card-body">
+            <div class="star-icons">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="card-text">Shop with rich assortment...</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more review cards here -->
+    </div>
+  </div>
+
+                <!-- ===================================== -->
+                <!-- ===================================== -->        
+        <hr>
+
+
+        <footer class="dark-footer bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4><a href="services/SR/insta/index.html"
+                                style="text-decoration: none; color: whitesmoke;">إنستقرام</a></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="services/SR/insta/followers.html" style="text-decoration: none;">زيادة
+                                    متابعين</a></li>
+                            <li><a href="services/SR/insta/likes.html" style="text-decoration: none;">زيادة لايكات</a>
+                            </li>
+                            <li><a href="services/SR/insta/story_views.html" style="text-decoration: none;">زيادة
+                                    مشاهدات ستوري</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><a href="services/SR/tiktok/index.html"
+                                style="text-decoration: none; color: whitesmoke;">تيك توك</a></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="services/SR/tiktok/followers.html" style="text-decoration: none;">زيادة
+                                    متابعين</a></li>
+                            <li><a href="services/SR/tiktok/likes.html" style="text-decoration: none;">زيادة لايكات</a>
+                            </li>
+                            <li><a href="services/SR/tiktok/views.html" style="text-decoration: none;">زيادة مشاهدات</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><a href="services/SR/twitter/index.html"
+                                style="text-decoration: none; color: whitesmoke;">تويتر</a></h4>
+                        <ul class="list-unstyled">
+                            <li><a href="services/SR/twitter/followers.html" style="text-decoration: none;">زيادة
+                                    متابعين</a></li>
+                            <li><a href="services/SR/twitter/retweet.html" style="text-decoration: none;">زيادة
+                                    رتويت</a></li>
+                            <li><a href="services/SR/twitter/likes.html" style="text-decoration: none;">زيادة لايكات
+                                    تويتر</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                            <h4>تواصل معنا</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/follow_zone98" target="_blank" style="text-decoration: none;"><i
+                                            class="fab fa-instagram fa-2x"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://wa.me/+96899261243" target="_blank"
+                                        style="text-decoration: none;"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="mailto:support@zone-stores.com" style="text-decoration: none;">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
