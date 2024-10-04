@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript"></script>
+    <!-- Payhihp -->
+    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+    <script>
+        var PayhipConfig = {
+            enableCart: true
+        };
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="../../logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../logo1.png" type="image/x-icon">
+    <!-- ===================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../../ad1.png">
+    <title>zone store</title>
+</head>
+
+<body class="bg-dark text-white">
+    <center>
+
+        <div class="container mt-3">
+
+            <img class="rounded-circle" src="../../logo1.png" style="display: inline-block;
+      max-width: 100px;">
+            <br>
+            <h1 class="text-warning" style="display: inline;"> Zoon Store </h1>
+            <h1 class="text-warning">أهلا و سهلا بك في متجر زون</h1>
+            <hr>
+
+            <!-- currency picker -->
+            <div class="sticky-top bg-dark py-5">
+      <select id="currency-picker" class="bg-dark text-danger p-2 rounded-5">
+        <option value="SAR">&#x1F1F8;&#x1F1E6; الريال السعودي (SAR)</option>
+        <option value="OMR" selected>&#x1F1F4;&#x1F1F2; الريال العماني (OMR)</option>
+        <!-- <option value="KWD">&#x1F1F0;&#x1F1FC; دينار كويتي (KWD)</option> -->
+        <option value="AED">&#x1F1E6;&#x1F1EA; الدرهم الإماراتي (AED)</option>
+        <!-- <option value="QAR">&#x1F1F6;&#x1F1E6; الريال القطري (QAR)</option> -->
+        <option value="USD">&#x1F1FA;&#x1F1F8; الدولار الأمريكي (USD)</option>
+      </select>
+                <span class="mb-1 h3 text-success"> : أختر عملتك </span>
+            </div>
+            <hr>
+            <!-- -------------- END OF CURRENCY PICKER ---------------- -->
+
+            <div class="container mt-3">
+                <br>
+                <nav style="position: sticky; top: 0; z-index: 9999;" class="bg-dark">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="text-warning bg-black nav-link active" data-bs-toggle="tab"
+                                href="#home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu1">تقديم
+                                الشكاوي</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <br>
+                        <div class="p-2" width="100%" style="background-color: rgb(0,15,38);">
+
+                            <h3 dir="rtl">شراء رياكشنات فيسبوك<br>(ضمان مدى الحياة)</h3>
+                            <p dir="rtl" style="color: gray;"><a href="../../../index.html">الصفحة
+                                    الرئيسية</a>
+                                >
+                                <a href="index.html">خدمات فيسبوك</a>
+                                ><br>
+                                شراء متابعين فيسبوك (ضمان مدى الحياة)
+                            </p>
+                            <br><br>
+
+                            <img class="img-responsive" src="../../../posters/facebook/facebook_likes.svg"
+                                style="max-width: 35vmax">
+
+                            <hr>
+
+                            <p dir="rtl" style="color: gray; text-align: right;">
+                                التعليمات قبل شراء الخدمة :
+                                <br>
+                            <ul dir="rtl" style="color: gray; text-align: right;">
+                                <b>
+                                    <li>جميع الحسابات يجب أن تكون عامة وليست خاصة.</li>
+                                    <li>تاكد ان حسابك صحيح عشان اذا كان فيه غلط مانتحمل المسوولية</li>
+                                    <li>بعد ارسال الطلب لايمكن إلغاء طلبك أو إستبداله , ولاتغير اليوزر لين تنتهي الزيادة
+                                    </li>
+                                    <br>
+                                    <li>مدة التعويض : <span style="color: red;">مدى الحياة</span></li>
+                                </b>
+                            </ul>
+                            <p dir="rtl" style="color: red; text-align: right;">
+                                قم بـ شراء رياكشنات فيسبوك الآن واحصل على الظهور الذي تستحقه اليوم من خلال خدماتنا. نحن
+                                نضمن التسليم السريع والدفعات الآمنة وفريق دعم العملاء الودود لمساعدتك في كل خطوة على
+                                الطريق.
+                            </p>
+                            <br><br>
+                            <form id="form" class="p-3" dir="rtl" style="border: solid 2px gray; text-align: right;">
+
+                                <input type="hidden" name="access_key" value="eedba20b-4c6d-452a-bb60-e9d68a71a492" />
+                                <input type="hidden" name="subject"
+                                    value="تلقيت طلب جديد من متجر زون [ رياكشنات لبوستات فيسبوك (ضمان مدى الحياة) ]" />
+                                <input type="hidden" name="from_name" value="Zone Store">
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                <p>أدخل رابط البوست : </p>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" class="form-control bg-dark text-light" id="user" name="user_url"
+                                        required>
+                                    <label for="user">تأكد أن حسابك عام و ليس خاص*</label>
+                                </div>
+
+                                <p>أدخل الإيميل الخاص بك : </p>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="email" class="form-control bg-dark text-light" id="email" name="email"
+                                        required>
+                                    <label for="email"> يرجى استخدام نفس الايميل عند الدفع*</label>
+                                </div>
+
+
+                                <!-- options -->
+                                <label for="order">أختر طلبك : </label>
+                                <br>
+                                <select onchange="updateSecondSelect()" class="form-select-lg mt-3 bg-dark text-light"
+                                    name="order" id="order">
+                                    <optgroup label="ـــــــــــــــــــــــــــــــــــ"></optgroup>
+                                    <optgroup label="ضمان مدى الحياة"></optgroup>
+                                    <optgroup label="ـــــــــــــــــــــــــــــــــــ"></optgroup>
+                                    <option value="likes 👍 [lifetime]">لايكات 👍 للبوست [ضمان مدى الحياة]</option>
+                                    <option value="heart ❤️ [lifetime]">قلب ❤️ [ضمان مدى الحياة]</option>
+                                    <option value="angry 😡 [lifetime]">غاضب 😡 [ضمان مدى الحياة]</option>
+                                    <option value="laugh 😂 [lifetime]">يضحك 😂 [ضمان مدى الحياة]</option>
+                                    <option value="wow 😯 [lifetime]">واو 😯 [ضمان مدى الحياة]</option>
+                                    <option value="sad 😢 [lifetime]">حزين 😢 [ضمان مدى الحياة]</option>
+                                    <option value="care 🥰 [lifetime]">ودود 🥰 [ضمان مدى الحياة]</option>
+                                    </optgroup>
+                                </select>
+
+                                <br><br>
+
+                                <label for="number">أختر العدد : </label>
+                                <br>
+                                <select class="form-select-lg mt-3 bg-dark text-light" name="number" id="number">
+                                    <option value="1K [1.75 OMR]">1000 لايك (1.75 ر.ع)</option>
+                                    <option value="2K [2.98 OMR]">2000 لايك (2.98 ر.ع)</option>
+                                    <option value="3K [4.01 OMR]">3 آلاف لايك (4.01 ر.ع)</option>
+                                    <option value="5K [6.58 OMR]">5 آلاف لايك (6.58 ر.ع)</option>
+                                    <option value="10K [12.72 OMR]">10 آلاف لايك (12.72 ر.ع)</option>
+                                    <option value="15K [18.38 OMR]">15 ألف لايك (18.38 ر.ع)</option>
+                                    <option value="20K [23.98 OMR]">20 ألف لايك (23.98 ر.ع)</option>
+                                    <option value="40K [47.11 OMR]">40 ألف لايك (47.11 ر.ع)</option>
+                                    <option value="60K [68.44 OMR]">60 ألف لايك (68.44 ر.ع)</option>
+                                    <option value="80K [91.14 OMR]">80 ألف لايك (91.14 ر.ع)</option>
+                                    <option value="100K [113.96 OMR]">100 ألف لايك (113.96 ر.ع)</option>
+                                    <option value="130K [137.19 OMR]">130 ألف لايك (137.19 ر.ع)</option>
+                                    <option value="160K [160.07 OMR]">160 ألف لايك (160.07 ر.ع)</option>
+                                    <option value="180K [171.27 OMR]">180 ألف لايك (171.27 ر.ع)</option>
+                                    <option value="200K [182.57 OMR]">200 ألف لايك (182.57 ر.ع)</option>
+                                </select>
+
+                                <script>
+                                    function updateSecondSelect() {
+                                        var firstSelect = document.getElementById("order");
+                                        var secondSelect = document.getElementById("number");
+                                        var selectedValue = firstSelect.value;
+
+                                        // Clear existing options
+                                        secondSelect.innerHTML = "";
+
+                                        // Add options based on the selected value
+                                        if (selectedValue === "likes 👍 [lifetime]") {
+                                            secondSelect.innerHTML += `
+    <option value="1K [1.75 OMR]">1000 لايك (1.75 ر.ع)</option>
+    <option value="2K [2.98 OMR]">2000 لايك (2.98 ر.ع)</option>
+    <option value="3K [4.01 OMR]">3 آلاف لايك (4.01 ر.ع)</option>
+    <option value="5K [6.58 OMR]">5 آلاف لايك (6.58 ر.ع)</option>
+    <option value="10K [12.72 OMR]">10 آلاف لايك (12.72 ر.ع)</option>
+    <option value="15K [18.38 OMR]">15 ألف لايك (18.38 ر.ع)</option>
+    <option value="20K [23.98 OMR]">20 ألف لايك (23.98 ر.ع)</option>
+    <option value="40K [47.11 OMR]">40 ألف لايك (47.11 ر.ع)</option>
+    <option value="60K [68.44 OMR]">60 ألف لايك (68.44 ر.ع)</option>
+    <option value="80K [91.14 OMR]">80 ألف لايك (91.14 ر.ع)</option>
+    <option value="100K [113.96 OMR]">100 ألف لايك (113.96 ر.ع)</option>
+    <option value="130K [137.19 OMR]">130 ألف لايك (137.19 ر.ع)</option>
+    <option value="160K [160.07 OMR]">160 ألف لايك (160.07 ر.ع)</option>
+    <option value="180K [171.27 OMR]">180 ألف لايك (171.27 ر.ع)</option>
+    <option value="200K [182.57 OMR]">200 ألف لايك (182.57 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "heart ❤️ [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 قلب (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 قلب (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف قلب (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف قلب (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف قلب (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف قلب (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف قلب (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف قلب (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف قلب (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف قلب (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف قلب (102.59 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "angry 😡 [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 وجه غاضب (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 وجه غاضب (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف وجه غاضب (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف وجه غاضب (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف وجه غاضب (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف وجه غاضب (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف وجه غاضب (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف وجه غاضب (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف وجه غاضب (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف وجه غاضب (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف وجه غاضب (102.59 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "laugh 😂 [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 وجه يضحك (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 وجه يضحك (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف وجه يضحك (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف وجه يضحك (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف وجه يضحك (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف وجه يضحك (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف وجه يضحك (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف وجه يضحك (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف وجه يضحك (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف وجه يضحك (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف وجه يضحك (102.59 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "wow 😯 [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 وجه متعجب 😯 (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 وجه متعجب 😯 (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف وجه متعجب 😯 (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف وجه متعجب 😯 (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف وجه متعجب 😯 (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف وجه متعجب 😯 (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف وجه متعجب 😯 (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف وجه متعجب 😯 (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف وجه متعجب 😯 (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف وجه متعجب 😯 (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف وجه متعجب 😯 (102.59 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "sad 😢 [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 وجه حزين (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 وجه حزين (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف وجه حزين (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف وجه حزين (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف وجه حزين (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف وجه حزين (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف وجه حزين (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف وجه حزين (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف وجه حزين (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف وجه حزين (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف وجه حزين (102.59 ر.ع)</option>
+        `;
+                                        } else if (selectedValue === "care 🥰 [lifetime]") {
+                                            secondSelect.innerHTML += `
+        <option value="1K [1.44 OMR]">1000 وجه ودود (1.44 ر.ع)</option>
+        <option value="2K [2.77 OMR]">2000 وجه ودود (2.77 ر.ع)</option>
+        <option value="3K [3.70 OMR]">3 آلاف وجه ودود (3.70 ر.ع)</option>
+        <option value="5K [6.06 OMR]">5 آلاف وجه ودود (6.06 ر.ع)</option>
+        <option value="10K [11.72 OMR]">10 آلاف وجه ودود (11.72 ر.ع)</option>
+        <option value="15K [16.82 OMR]">15 ألف وجه ودود (16.82 ر.ع)</option>
+        <option value="20K [21.99 OMR]">20 ألف وجه ودود (21.99 ر.ع)</option>
+        <option value="40K [43.06 OMR]">40 ألف وجه ودود (43.06 ر.ع)</option>
+        <option value="60K [63.75 OMR]">60 ألف وجه ودود (63.75 ر.ع)</option>
+        <option value="80K [84.28 OMR]">80 ألف وجه ودود (84.28 ر.ع)</option>
+        <option value="100K [102.59 OMR]">100 ألف وجه ودود (102.59 ر.ع)</option>
+        `;
+                                        }
+                                    }
+                                </script>
+
+                                <hr><br>
+
+                                <b>
+                                    <p class="text-danger">مهم جدا قبل الطلب!!!</p>
+                                </b>
+                                <div class="bg-dark" style="border: solid 0.5px darkblue; border-radius: 10px;">
+                                    <b>
+                                        <p class="text-success">ملاحظة :</p>
+                                    </b>
+
+                                    <b>
+                                        <p class="text-success">طريقة حساب التخفيض :</p>
+                                    </b>
+                                    <p class="text-warning"> -
+
+                                        السعر الذي تم تخفيضه = ((السعر الأصلي - سعر التخفيض)
+                                        <br>
+                                        السعر الأصلي = 0.025 * عدد المتابعين
+                                        <br>
+                                        مثال : عدد المتابعين = 10 آلاف
+                                        <br>
+                                        السعر الاصلي = 0.025 * 10000 = 250 ريال سعودي
+                                        <br>
+                                        السعر الذي تم تخفيضه (الخصم) = ((250 - 215) = 35 ريال سعودي
+                                    </p>
+                                </div>
+
+                                <hr>
+
+                                <center><button type="submit" class="btn btn-primary">إنهــــاء</button>
+                                    <div id="result"></div>
+                                    <div id="carty" name="carty"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- ========================================= -->
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>تقديم الشكاوي</h3>
+                        <h2 class="text-light">File A Complaint</h2>
+                        <div class="container mt-5">
+                            <hr>
+                            <form class="bg-dark text-white p-4 border rounded" id="form2">
+                                <!-- server to submit the form -->
+                                <input type="hidden" name="access_key" value="eedba20b-4c6d-452a-bb60-e9d68a71a492" />
+                                <input type="hidden" name="subject"
+                                    value="تلقيت شكوى من متجر زون [ رياكشنات فيسبوك ]" />
+                                <input type="hidden" name="from_name" value="Zone Store">
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                                <!-- .................................................................................... -->
+                                <h4 class="text-center mb-4">تقديم شكوى</h4>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">اسمك</label>
+                                    <input type="text" class="form-control bg-dark text-white border-white" id="name"
+                                        name="name" placeholder="أدخل اسمك">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">عنوان البريد الإلكتروني</label>
+                                    <input type="email" class="form-control bg-dark text-white border-white" id="email"
+                                        name="email" placeholder="أدخل عنوان بريدك الإلكتروني">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="complaint" class="form-label">الشكوى</label>
+                                    <textarea class="form-control bg-dark text-white border-white" id="complaint"
+                                        name="complaint" rows="4" placeholder="صف الشكوى الخاصة بك"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">تقديم الشكوى</button>
+                            </form>
+                            <div id="result2"></div>
+                            <script>
+                                //-------------------------------------------------------------
+                                // web3Forms
+                                const form2 = document.getElementById('form2');
+                                const result2 = document.getElementById('result2');
+
+                                form2.addEventListener('submit', function (e) {
+                                    e.preventDefault();
+                                    const formData = new FormData(form2);
+                                    const object = Object.fromEntries(formData);
+                                    const json = JSON.stringify(object);
+                                    result2.innerHTML = "يرجى الإنتظار..."
+
+                                    fetch('https://api.web3forms.com/submit', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                            'Accept': 'application/json'
+                                        },
+                                        body: json
+                                    })
+                                        .then(async (response) => {
+                                            let json = await response.json();
+                                            if (response.status == 200) {
+                                                result2.innerHTML = "تم إستلام الشكوى بنجاح";
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.log(error);
+                                            result2.innerHTML = "حدث خطأ غير متوقع!";
+                                        })
+                                        .then(function () {
+                                            form2.reset();
+                                            setTimeout(() => {
+                                                result2.style.display = "none";
+                                            }, 10000);
+                                        });
+                                });
+                            </script>
+                            <!-- ===================================== -->
+                            <!-- ===================================== -->
+                        </div>
+                    </div>
+
+
+                    <script>
+                        const form = document.getElementById('form');
+                        const result = document.getElementById('result');
+
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+                            const formData = new FormData(form);
+                            const object = Object.fromEntries(formData);
+                            const json = JSON.stringify(object);
+                            result.innerHTML = "يرجى الإنتظار..."
+
+                            fetch('https://api.web3forms.com/submit', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'Accept': 'application/json'
+                                },
+                                body: json
+                            })
+                                .then(async (response) => {
+                                    let json = await response.json();
+                                    if (response.status == 200) {
+                                        result.innerHTML = "تم إستلام طلبك بنجاح، سيتم تأكيده بعد إكمال عملية الدفع";
+
+                                        var selectOption = document.getElementById("number").value;
+
+                                        if (selectOption === "1K [1.75 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/1k.html";
+                                        } else if (selectOption === "2K [2.98 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/2k.html";
+                                        } else if (selectOption === "3K [4.01 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/3k.html";
+                                        } else if (selectOption === "5K [6.58 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/5k.html";
+                                        } else if (selectOption === "10K [12.72 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/10k.html";
+                                        } else if (selectOption === "15K [18.38 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/15k.html";
+                                        } else if (selectOption === "20K [23.98 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/20k.html";
+                                        } else if (selectOption === "40K [47.11 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/40k.html";
+                                        } else if (selectOption === "60K [68.44 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/60k.html";
+                                        } else if (selectOption === "80K [91.14 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/80k.html";
+                                        } else if (selectOption === "100K [113.96 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/100k.html";
+                                        } else if (selectOption === "130K [137.19 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/130k.html";
+                                        } else if (selectOption === "160K [160.07 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/160k.html";
+                                        } else if (selectOption === "180K [171.27 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/180k.html";
+                                        } else if (selectOption === "200K [182.57 OMR]") {
+                                            window.location.href = "reciept/reactions/likes/200k.html";
+
+                                            // Other reactions :-
+                                        } else if (selectOption === "1K [1.44 OMR]") {
+                                            window.location.href = "reciept/reactions/others/1k.html";
+                                        } else if (selectOption === "2K [2.77 OMR]") {
+                                            window.location.href = "reciept/reactions/others/2k.html";
+                                        } else if (selectOption === "3K [3.70 OMR]") {
+                                            window.location.href = "reciept/reactions/others/3k.html";
+                                        } else if (selectOption === "5K [6.06 OMR]") {
+                                            window.location.href = "reciept/reactions/others/5k.html";
+                                        } else if (selectOption === "10K [11.72 OMR]") {
+                                            window.location.href = "reciept/reactions/others/10k.html";
+                                        } else if (selectOption === "15K [16.82 OMR]") {
+                                            window.location.href = "reciept/reactions/others/15k.html";
+                                        } else if (selectOption === "20K [21.99 OMR]") {
+                                            window.location.href = "reciept/reactions/others/20k.html";
+                                        } else if (selectOption === "40K [43.06 OMR]") {
+                                            window.location.href = "reciept/reactions/others/40k.html";
+                                        } else if (selectOption === "60K [63.75 OMR]") {
+                                            window.location.href = "reciept/reactions/others/60k.html";
+                                        } else if (selectOption === "80K [84.28 OMR]") {
+                                            window.location.href = "reciept/reactions/others/80k.html";
+                                        } else if (selectOption === "100K [102.59 OMR]") {
+                                            window.location.href = "reciept/reactions/others/100k.html";
+                                        }
+
+                                    } else {
+                                        console.log(response);
+                                        result.innerHTML = json.message;
+                                    }
+                                })
+                                .catch(error => {
+                                    console.log(error);
+                                    result.innerHTML = "حدث خطأ غير متوقع!";
+                                })
+                                .then(function () {
+                                    form.reset();
+                                    setTimeout(() => {
+                                        result.style.display = "none";
+                                    }, 10000);
+                                });
+                        });
+                    </script>
+                    <script src="script.js" type="text/javascript"></script>
+
+
+                </div>
+
+                <hr>
+
+
+                <!-- Comment box -->
+                <h3>
+                    <div style="background-color: black; color: brown;">آراء العملاء</div>
+                    <div class="commentbox"></div>
+                </h3>
+                <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        commentBox('5721137736581120-proj', {
+                            className: 'commentbox',
+                            defaultBoxId: 'commentbox',
+                            tlcParam: 'tlc',
+                            sortOrder: 'best',
+                            backgroundColor: '#000000',
+                            textColor: 'red',
+                            subtextColor: 'white',
+                            singleSignOn: 'white',
+                            createBoxUrl: function (boxId, pageLocation) {
+                                pageLocation.search = '';
+                                pageLocation.hash = boxId;
+                                return pageLocation.href;
+                            },
+                            onCommentCount: function (count) {
+                                console.log(count + " comments");
+                            }
+                        });
+                    });
+                </script>
+
+
+                <hr>
+                <footer class="dark-footer bg-dark text-white py-4">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4><a href="../insta/index.html"
+                                        style="text-decoration: none; color: whitesmoke;">إنستقرام</a></h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../insta/followers.html" style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../insta/likes.html" style="text-decoration: none;">زيادة لايكات</a>
+                                    </li>
+                                    <li><a href="../insta/story_views.html" style="text-decoration: none;">زيادة
+                                            مشاهدات ستوري</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><a href="../tiktok/index.html" style="text-decoration: none; color: whitesmoke;">تيك
+                                        توك</a></h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../tiktok/followers.html" style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../tiktok/likes.html" style="text-decoration: none;">زيادة لايكات</a>
+                                    </li>
+                                    <li><a href="../tiktok/views.html" style="text-decoration: none;">زيادة مشاهدات</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><a href="../twitter/index.html"
+                                        style="text-decoration: none; color: whitesmoke;">تويتر</a></h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../twitter/followers.html" style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../twitter/retweet.html" style="text-decoration: none;">زيادة
+                                            رتويت</a></li>
+                                    <li><a href="../twitter/likes.html" style="text-decoration: none;">زيادة لايكات
+                                            تويتر</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h4>تواصل معنا</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.instagram.com/follow_zone98" target="_blank"
+                                            style="text-decoration: none;"><i class="fab fa-instagram fa-2x"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://wa.me/+96899261243" target="_blank"
+                                            style="text-decoration: none;"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="mailto:support@zone-stores.com" style="text-decoration: none;">
+                                            <i class="fas fa-envelope fa-2x"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </center>
+
+
+</body>
+
+</html>

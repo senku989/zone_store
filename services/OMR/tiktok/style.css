@@ -1,0 +1,51 @@
+    .card {
+      background-color: #333;
+    }
+
+    .card-header {
+      background-color: #555;
+    }
+
+    .card-header button {
+      color: #fff;
+      background-color: #333;
+    }
+
+    .card-body {
+      background-color: #444;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .container1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+  overflow-y: scroll;
+}
+
+.container-inner {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  max-width: 400px;
+}
+
+.close-button {
+  z-index: 99999;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Payhihp -->
+    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+    <script>
+        var PayhipConfig = {
+            enableCart: true
+        };
+    </script>
+
+    <title>Receipt Page</title>
+    <style>
+        /* Your provided CSS styles */
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .receipt {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .receipt-header h2 {
+            margin: 0;
+        }
+
+        .receipt-details {
+            margin-bottom: 20px;
+        }
+
+        .receipt-details-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .receipt-details-item span {
+            font-weight: bold;
+        }
+
+        .receipt-total {
+            text-align: right;
+        }
+
+        .receipt-total span {
+            font-size: 18px;
+        }
+
+        .pay-button {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .go-back-button {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .pay-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        // Function to convert currency
+        function convertCurrency(amount, exchangeRate) {
+            return (amount * exchangeRate).toFixed(2);
+        }
+
+        // Fetch exchange rates using a free API
+        fetch("https://api.exchangerate-api.com/v4/latest/usd")
+            .then(response => response.json())
+            .then(data => {
+                const exchangeRateSARToOMR = data.rates.USD;
+
+                // Update prices in the DOM
+                const prices = document.getElementsByClassName('convert-price');
+                for (const priceElement of prices) {
+                    const originalPrice = parseFloat(priceElement.dataset.price);
+                    const convertedPrice = convertCurrency(originalPrice, exchangeRateSARToOMR);
+                    priceElement.textContent = `${convertedPrice} دولار أمريكي`;
+                }
+            })
+            .catch(error => console.error("Error fetching exchange rates:", error));
+    </script>
+
+    <!-- count the number of the product -->
+    <script>
+        function getCurrentFileName() {
+            var path = window.location.pathname;
+            var filename = path.split("/").pop();
+            return filename.replace(".html", "");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var countElement = document.getElementById("count");
+            var currentFileName = getCurrentFileName();
+            countElement.textContent = currentFileName;
+        });
+    </script>
+</head>
+
+<body>
+    <div class="receipt">
+        <div class="receipt-header">
+            <h2>الفاتورة</h2>
+            <hr>
+        </div>
+        <div class="receipt-details">
+            <div class="receipt-details-item">
+                <span>إسم المنتج:</span>
+                <span>متابعين فيسبوك (ضمان مدى الحياة)</span>
+            </div>
+            <div class="receipt-details-item">
+                <span>العدد:</span>
+                <span id="count"></span>
+            </div>
+            <div class="receipt-details-item">
+                <span>السعر:</span>
+                <span>$6.7 [<span class="convert-price" data-price="6.7"></span>]</span>
+            </div>
+        </div>
+        <hr>
+        <div class="receipt-total">
+            <span>المجموع:</span>
+            <span>$6.7 [<span class="convert-price" data-price="6.7"></span>]</span>
+        </div>
+        <center><br>
+            <a href="https://payhip.com/b/OPMjH" class="payhip-buy-button" data-theme="green" data-product="AVgbW">إشتري
+                الآن</a>
+            <a href="https://payhip.com/b/OPMjH" class="payhip-add-to-cart-button" data-theme="blue"
+                data-product="AVgbW">إضافة للسلة</a>
+            <br>
+            <a href="javascript:history.back()" class="go-back-button">عودة للصفحة السابقة</a>
+        </center>
+    </div>
+</body>
+
+</html>

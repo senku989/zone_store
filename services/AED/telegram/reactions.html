@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript"></script>
+    <!-- Payhihp -->
+    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+    <script>
+        var PayhipConfig = {
+            enableCart: true
+        };
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- ===================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="logo1.png">
+    <title>zone store</title>
+</head>
+
+<body class="bg-dark text-white">
+    <center>
+
+        <div class="container mt-3">
+
+            <img class="rounded-circle" src="../../logo1.png" style="display: inline-block;
+      max-width: 100px;">
+            <br>
+            <h1 class="text-warning" style="display: inline;"> Zoon Store </h1>
+            <h1 class="text-warning">أهلا و سهلا بك في متجر زون</h1>
+            <hr>
+
+            <!-- currency picker -->
+            <div class="sticky-top bg-dark py-5">
+      <select id="currency-picker" class="bg-dark text-danger p-2 rounded-5">
+        <option value="SAR">&#x1F1F8;&#x1F1E6; الريال السعودي (SAR)</option>
+        <option value="OMR">&#x1F1F4;&#x1F1F2; الريال العماني (OMR)</option>
+        <!-- <option value="KWD">&#x1F1F0;&#x1F1FC; دينار كويتي (KWD)</option> -->
+        <option value="AED" selected>&#x1F1E6;&#x1F1EA; الدرهم الإماراتي (AED)</option>
+        <!-- <option value="QAR">&#x1F1F6;&#x1F1E6; الريال القطري (QAR)</option> -->
+        <option value="USD">&#x1F1FA;&#x1F1F8; الدولار الأمريكي (USD)</option>
+      </select>
+                <span class="mb-1 h3 text-success"> : أختر عملتك </span>
+            </div>
+            <hr>
+            <!-- -------------- END OF CURRENCY PICKER ---------------- -->
+
+            <div class="container mt-3">
+                <br>
+                <nav style="position: sticky; top: 0; z-index: 9999;" class="bg-dark">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="text-warning bg-black nav-link active" data-bs-toggle="tab"
+                                href="#home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-warning bg-black nav-link" data-bs-toggle="tab" href="#menu1">تقديم
+                                الشكاوي</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <br>
+                        <div class="p-2" width="100%" style="background-color: rgb(0,15,38);">
+
+                            <h3 dir="rtl">شراء رياكشنات تلقرام</h3>
+                            <p dir="rtl" style="color: gray;"><a href="../../../index.html">الصفحة
+                                    الرئيسية</a>
+                                >
+                                <a href="index.html">خدمات تلقرام</a>
+                                >
+                                شراء رياكشنات تلقرام
+                            </p>
+                            <br><br>
+
+                            <img class="img-responsive" src="../../../posters/telegram/reactions.svg"
+                                style="max-width: 35vmax">
+
+                            <hr>
+
+                            <p dir="rtl" style="color: gray; text-align: right;">
+                                التعليمات قبل شراء الخدمة :
+                                <br>
+                            <ul dir="rtl" style="color: gray; text-align: right;">
+                                <li>جميع الحسابات يجب أن تكون عامة وليست خاصة.</li>
+                                <li>تأكد من صحة اسم المستخدم أو الرابط الفيديو</li>
+                                <li>بعد ارسال الطلب لايمكن الغاء طلبك او استبداله , ولاتغير اليوزر لين تنتهي الزياده
+                                </li>
+                                <li>يمنع الطلب للحسابات ( السياسية ، التطرف ، الإباحية).</li>
+                                <li>نسبة الإسقاط : 0%</li>
+                            </ul>
+                            <p dir="rtl" style="color: red; text-align: right;">
+                                قم بـ شراء تفاعلات لمنشورات تلقرام الآن واحصل على الظهور الذي تستحقه اليوم من خلال
+                                خدماتنا. نحن
+                                نضمن التسليم السريع والدفعات الآمنة وفريق دعم العملاء الودود لمساعدتك في كل خطوة على
+                                الطريق.
+                            </p>
+                            <br><br>
+                            <form id="form" class="p-3" dir="rtl" style="border: solid 2px gray; text-align: right;">
+
+                                <input type="hidden" name="access_key" value="eedba20b-4c6d-452a-bb60-e9d68a71a492" />
+                                <input type="hidden" name="subject"
+                                    value="تلقيت طلب جديد من متجر زون [ رياكشنات تلقرام ]" />
+                                <input type="hidden" name="from_name" value="Zone Store">
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                <p>أدخل رابط المنشور/البوست : </p>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="url" class="form-control bg-dark text-light" id="user" name="user_url"
+                                        required>
+                                    <label for="user">تأكد أن الحساب في الوضع العام*</label>
+                                </div>
+
+                                <p>أدخل الإيميل الخاص بك : </p>
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="email" class="form-control bg-dark text-light" id="email" name="email"
+                                        required>
+                                    <label for="email"> يرجى استخدام نفس الايميل عند الدفع*</label>
+                                </div>
+
+                                <!-- options -->
+                                <b><label style="color: #415A77;">أختر نوع الإيموجي : </label></b>
+                                <select class="form-select-lg mt-3 bg-dark text-warning" name="order">
+                                    <option value="[👍🤩🎉🔥❤️🥰👏🏻] positive reactions">[👍🤩🎉🔥❤️🥰👏🏻] تفاعلات
+                                        إيجابية للمنشور + مشاهدات مجانية</option>
+                                    <option value="[👎😢💩🤮🤬] Negative reactions">[👎😢💩🤮🤬] تفاعلات سلبية للمنشور +
+                                        مشاهدات مجانية</option>
+                                    <option value="[👍]">[👍] + مشاهدات مجانية</option>
+                                    <option value="[👎]">[👎] + مشاهدات مجانية</option>
+                                    <option value="[❤️]">[❤️] + مشاهدات مجانية</option>
+                                    <option value="[🔥]">[🔥] + مشاهدات مجانية</option>
+                                    <option value="[🤣]">[🤣] + مشاهدات مجانية</option>
+                                    <option value="[😱]">[😱] + مشاهدات مجانية</option>
+                                    <option value="[⚡]">[⚡] + مشاهدات مجانية</option>
+                                    <option value="[🎉]">[🎉] + مشاهدات مجانية</option>
+                                    <option value="[🤩]">[🤩] + مشاهدات مجانية</option>
+                                    <option value="[😁]">[😁] + مشاهدات مجانية</option>
+                                    <option value="[🙏]">[🙏] + مشاهدات مجانية</option>
+                                    <option value="[👌🏻]">[👌🏻] + مشاهدات مجانية</option>
+                                    <option value="[😍]">[😍] + مشاهدات مجانية</option>
+                                    <option value="[😢]">[😢] + مشاهدات مجانية</option>
+                                    <option value="[💩]">[💩] + مشاهدات مجانية</option>
+                                    <option value="[🤮]">[🤮] + مشاهدات مجانية</option>
+                                    <option value="[🖕]">[🖕] + مشاهدات مجانية</option>
+                                    <option value="[😐]">[😐] + مشاهدات مجانية</option>
+                                    <option value="[😭]">[😭] + مشاهدات مجانية</option>
+                                    <option value="[💯]">[💯] + مشاهدات مجانية</option>
+                                    <option value="[👻]">[👻] + مشاهدات مجانية</option>
+                                    <option value="[👀]">[👀] + مشاهدات مجانية</option>
+                                    <option value="[🤩]">[🤩] + مشاهدات مجانية</option>
+                                </select>
+
+                                <hr><br>
+                                <!-- options -->
+                                <b><label style="color: #415A77;">أختر عدد الرياكشن/التفاعل : </label></b>
+                                <select id="order" class="form-select-lg mt-3 bg-dark text-warning"
+                                    name="number of reactions :" id="number">
+                                    <option value="1K [6.97 AED]">1000 تفاعل/رياكشن (+ 6.97 درهم)</option>
+                                    <option value="2k [8.81 AED]">2000 تفاعل/رياكشن (+ 8.81 درهم)</option>
+                                    <option value="3k [11.74 AED]">3 آلاف تفاعل/رياكشن (+ 11.74 درهم)</option>
+                                    <option value="5k [13.95 AED]">5 آلاف تفاعل/رياكشن (+ 13.95 درهم)</option>
+                                    <option value="10k [18.72 AED]">10 آلاف تفاعل/رياكشن (+ 18.72 درهم)</option>
+                                    <option value="15k [27.52 AED]">15 ألف تفاعل/رياكشن (+ 27.52 درهم)</option>
+                                    <option value="20k [35.23 AED]">20 ألف تفاعل/رياكشن (+ 35.23 درهم)</option>
+                                    <option value="25k [38.17 AED]">25 ألف تفاعل/رياكشن (+ 38.17 درهم)</option>
+                                    <option value="60k [41.10 AED]">60 ألف تفاعل/رياكشن (+ 41.10 درهم)</option>
+                                    <option value="120k [63.86 AED]">120 ألف تفاعل/رياكشن (+ 63.86 درهم)</option>
+                                    <option value="300k [87.35 AED]">300 ألف تفاعل/رياكشن (+ 87.35 درهم)</option>
+                                    <option value="600k [96.89 AED]">600 ألف تفاعل/رياكشن (+ 96.89 درهم)</option>
+                                    <option value="1M [116.71 AED]">مليون تفاعل/رياكشن (+ 116.71 درهم)</option>
+                                </select>
+
+                                <hr><br>
+
+                                <b>
+                                    <p style="color: #415A77;"> وصف الخدمات :- </p>
+                                </b>
+                                <div class="bg-dark" style="border: solid 0.5px darkblue; border-radius: 10px;">
+                                    <b>
+                                        <p class="text-success">التعبيرات الإيجابية الممزوجة (مكس) :</p>
+                                    </b>
+                                    <p>[👍🤩🎉🔥❤️🥰👏🏻]</p>
+                                    <p class="text-warning"> -
+                                        نسبة المزج: هذا الرياكشن 👍 بنسبة 50% و كل إيموجي آخر بنسبة 10-15% من إجمالي
+                                        100%
+                                        <br>
+                                        -
+                                        إذا كانت القناة لا تسمح بردود الفعل فسيتم وضع علامة على أن الطلب مكتمل
+                                    </p>
+                                    <hr>
+                                    <b>
+                                        <p class="text-success">التعبيرات السلبية الممزوجة (مكس) :</p>
+                                    </b>
+                                    <p>[👎😢💩🤮🤬]</p>
+                                    <p class="text-warning"> -
+                                        نسبة المزج: هذا الرياكشن 👎 بنسبة 50% و كل إيموجي آخر بنسبة 10-15% من إجمالي
+                                        100%
+                                        <br>
+                                        -
+                                        إذا كانت القناة لا تسمح بردود الفعل السلبية فسيتم وضع علامة على أن الطلب مكتمل
+                                    </p>
+                                    <hr>
+
+                                    <b>
+                                        <p class="text-success">ملاحظة :</p>
+                                    </b>
+                                    <p class="text-warning">توجد مشاهدات مجانية مع كل طلب</p>
+                                </div>
+
+                                <hr>
+
+                                <center><button type="submit" class="btn btn-primary">إنهــــاء</button>
+                                    <div id="result"></div>
+                                    <div id="carty" name="carty"></div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <!-- ========================================= -->
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>تقديم الشكاوي</h3>
+                        <h2 class="text-light">File A Complaint</h2>
+                        <div class="container mt-5">
+                            <hr>
+                            <form class="bg-dark text-white p-4 border rounded" id="form2">
+                                <!-- server to submit the form -->
+                                <input type="hidden" name="access_key" value="eedba20b-4c6d-452a-bb60-e9d68a71a492" />
+                                <input type="hidden" name="subject"
+                                    value="تلقيت شكوى من متجر زون [ رياكشنات تلجرام ]" />
+                                <input type="hidden" name="from_name" value="Zone Store">
+                                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                                <!-- .................................................................................... -->
+                                <h4 class="text-center mb-4">تقديم شكوى</h4>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">اسمك</label>
+                                    <input type="text" class="form-control bg-dark text-white border-white" id="name"
+                                        name="name" placeholder="أدخل اسمك">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">عنوان البريد الإلكتروني</label>
+                                    <input type="email" class="form-control bg-dark text-white border-white" id="email"
+                                        name="email" placeholder="أدخل عنوان بريدك الإلكتروني">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="complaint" class="form-label">الشكوى</label>
+                                    <textarea class="form-control bg-dark text-white border-white" id="complaint"
+                                        name="complaint" rows="4" placeholder="صف الشكوى الخاصة بك"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">تقديم الشكوى</button>
+                            </form>
+                            <div id="result2"></div>
+                            <script>
+                                //-------------------------------------------------------------
+                                // web3Forms
+                                const form2 = document.getElementById('form2');
+                                const result2 = document.getElementById('result2');
+
+                                form2.addEventListener('submit', function (e) {
+                                    e.preventDefault();
+                                    const formData = new FormData(form2);
+                                    const object = Object.fromEntries(formData);
+                                    const json = JSON.stringify(object);
+                                    result2.innerHTML = "يرجى الإنتظار..."
+
+                                    fetch('https://api.web3forms.com/submit', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                            'Accept': 'application/json'
+                                        },
+                                        body: json
+                                    })
+                                        .then(async (response) => {
+                                            let json = await response.json();
+                                            if (response.status == 200) {
+                                                result2.innerHTML = "تم إستلام الشكوى بنجاح";
+                                            }
+                                        })
+                                        .catch(error => {
+                                            console.log(error);
+                                            result2.innerHTML = "حدث خطأ غير متوقع!";
+                                        })
+                                        .then(function () {
+                                            form2.reset();
+                                            setTimeout(() => {
+                                                result2.style.display = "none";
+                                            }, 10000);
+                                        });
+                                });
+                            </script>
+                            <!-- ===================================== -->
+                            <!-- ===================================== -->
+                        </div>
+                    </div>
+
+
+                    <script>
+                        const form = document.getElementById('form');
+                        const result = document.getElementById('result');
+
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+                            const formData = new FormData(form);
+                            const object = Object.fromEntries(formData);
+                            const json = JSON.stringify(object);
+                            result.innerHTML = "يرجى الإنتظار..."
+
+                            fetch('https://api.web3forms.com/submit', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'Accept': 'application/json'
+                                },
+                                body: json
+                            })
+                                .then(async (response) => {
+                                    let json = await response.json();
+                                    if (response.status == 200) {
+                                        result.innerHTML = "تم إستلام طلبك بنجاح، سيتم تأكيده بعد إكمال عملية الدفع";
+
+                                        var selectOption = document.getElementById("order").value;
+
+                                        if (selectOption === "1K [6.97 AED]") {
+                                            window.location.href = "reciept/reactions/1k.html";
+                                        } else if (selectOption === "2k [8.81 AED]") {
+                                            window.location.href = "reciept/reactions/2k.html";
+                                        } else if (selectOption === "3k [11.74 AED]") {
+                                            window.location.href = "reciept/reactions/3k.html";
+                                        } else if (selectOption === "5k [13.95 AED]") {
+                                            window.location.href = "reciept/reactions/5k.html";
+                                        } else if (selectOption === "10k [18.72 AED]") {
+                                            window.location.href = "reciept/reactions/10k.html";
+                                        } else if (selectOption === "15k [27.52 AED]") {
+                                            window.location.href = "reciept/reactions/15k.html";
+                                        } else if (selectOption === "20k [35.23 AED]") {
+                                            window.location.href = "reciept/reactions/20k.html";
+                                        } else if (selectOption === "25k [38.17 AED]") {
+                                            window.location.href = "reciept/reactions/25k.html";
+                                        } else if (selectOption === "60k [41.10 AED]") {
+                                            window.location.href = "reciept/reactions/60k.html";
+                                        } else if (selectOption === "120k [63.86 AED]") {
+                                            window.location.href = "reciept/reactions/120k.html";
+                                        } else if (selectOption === "300k [87.35 AED]") {
+                                            window.location.href = "reciept/reactions/300k.html";
+                                        } else if (selectOption === "600k [96.89 AED]") {
+                                            window.location.href = "reciept/reactions/600k.html";
+                                        } else if (selectOption === "1M [116.71 AED]") {
+                                            window.location.href = "reciept/reactions/1M.html";
+                                        }
+                                    } else {
+                                        console.log(response);
+                                        result.innerHTML = json.message;
+                                    }
+                                })
+                                .catch(error => {
+                                    console.log(error);
+                                    result.innerHTML = "حدث خطأ غير متوقع!";
+                                })
+                                .then(function () {
+                                    form.reset();
+                                    setTimeout(() => {
+                                        result.style.display = "none";
+                                    }, 10000);
+                                });
+                        });
+                    </script>
+                    <script src="script.js" type="text/javascript"></script>
+
+
+                </div>
+
+                <hr>
+
+
+
+                <!-- Comment box -->
+                <h3>
+                    <div style="background-color: black; color: brown;">آراء العملاء</div>
+                    <div class="commentbox"></div>
+                </h3>
+                <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        commentBox('5721137736581120-proj', {
+                            className: 'commentbox',
+                            defaultBoxId: 'commentbox',
+                            tlcParam: 'tlc',
+                            sortOrder: 'best',
+                            backgroundColor: '#000000',
+                            textColor: 'red',
+                            subtextColor: 'white',
+                            singleSignOn: 'white',
+                            createBoxUrl: function (boxId, pageLocation) {
+                                pageLocation.search = '';
+                                pageLocation.hash = boxId;
+                                return pageLocation.href;
+                            },
+                            onCommentCount: function (count) {
+                                console.log(count + " comments");
+                            }
+                        });
+                    });
+                </script>
+
+
+
+                <hr>
+                <footer class="dark-footer bg-dark text-white py-4">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4><a href="../facebook/index.html"
+                                        style="text-decoration: none; color: whitesmoke;">فيسبوك</a>
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../facebook/life_warranty_followers.html"
+                                            style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../facebook/reactions.html" style="text-decoration: none;">زيادة لايكات
+                                            و
+                                            رياكشنات</a>
+                                    </li>
+                                    <li><a href="../facebook/reels_views.html" style="text-decoration: none;">زيادة
+                                            مشاهدات ريلز</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><a href="../tiktok/index.html" style="text-decoration: none; color: whitesmoke;">تيك
+                                        توك</a>
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../tiktok/followers.html" style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../tiktok/likes.html" style="text-decoration: none;">زيادة لايكات</a>
+                                    </li>
+                                    <li><a href="../tiktok/views.html" style="text-decoration: none;">زيادة مشاهدات</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4><a href="../twitter/index.html"
+                                        style="text-decoration: none; color: whitesmoke;">تويتر</a>
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="../twitter/followers.html" style="text-decoration: none;">زيادة
+                                            متابعين</a></li>
+                                    <li><a href="../twitter/retweet.html" style="text-decoration: none;">زيادة
+                                            رتويت</a></li>
+                                    <li><a href="../twitter/likes.html" style="text-decoration: none;">زيادة لايكات
+                                            تويتر</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h4>تواصل معنا</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://www.instagram.com/follow_zone98" target="_blank"
+                                            style="text-decoration: none;"><i class="fab fa-instagram fa-2x"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://wa.me/+96899261243" target="_blank"
+                                            style="text-decoration: none;"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="mailto:support@zone-stores.com" style="text-decoration: none;">
+                                            <i class="fas fa-envelope fa-2x"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </center>
+
+
+</body>
+
+</html>

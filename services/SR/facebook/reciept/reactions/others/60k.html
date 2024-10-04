@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- Payhihp -->
+<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+    <script>
+        var PayhipConfig = {
+            enableCart: true};
+    </script>
+    
+  <title>Receipt Page</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .receipt {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 4px;
+      margin: 50px auto;
+      max-width: 400px;
+    }
+
+    .receipt-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .receipt-header h2 {
+      margin: 0;
+    }
+
+    .receipt-details {
+      margin-bottom: 20px;
+    }
+
+    .receipt-details-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .receipt-details-item span {
+      font-weight: bold;
+    }
+
+    .receipt-total {
+      text-align: right;
+    }
+
+    .receipt-total span {
+      font-size: 18px;
+    }
+
+    .pay-button {
+      display: block;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .go-back-button {
+      display: block;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .pay-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt">
+    <div class="receipt-header">
+      <h2>الفاتورة</h2>
+      <hr>
+    </div>
+    <div class="receipt-details">
+      <div class="receipt-details-item">
+        <span>إسم المنتج:</span>
+        <span>رياكشنات (بوستات فيسبوك) (ضمان مدى الحياة)</span>
+      </div>
+      <div class="receipt-details-item">
+        <span>العدد:</span>
+        <span>1</span>
+      </div>
+      <div class="receipt-details-item">
+        <span>السعر:</span>
+        <span>$165.9 [622 ريال سعودي]</span>
+      </div>
+    </div>
+      <hr>
+    <div class="receipt-total">
+      <span>المجموع:</span>
+      <span>$165.9 [622 ريال سعودي]</span>
+    </div><center><br>
+        <a href="https://payhip.com/b/OPMjH" class="payhip-buy-button" data-theme="green" data-product="s4t0u">إشتري الآن</a>
+    <a href="https://payhip.com/b/OPMjH" class="payhip-add-to-cart-button" data-theme="blue" data-product="s4t0u">إضافة للسلة</a>
+        <br>
+        <a href="javascript:history.back()" class="go-back-button">عودة للصفحة السابقة</a>
+    </center></div>
+</body>
+</html>
